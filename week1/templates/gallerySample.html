@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sehoon's Blog</title>
+
+    <!--  Base css  -->
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/mondrian.css">
+
+    <!-- bootstrap css CDN   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVBAR part -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="mainPage.html">세훈이의 블로그 </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="mainPage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">갤러리 </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SNS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item"
+                                    href="https://www.facebook.com/profile.php?id=100000594101100">Facebook 바로가기 </a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://github.com/oereo">Github 바로가기 </a></li>
+                            <li><a class="dropdown-item" href="https://www.instagram.com/ggulggul_sh/">Instagram 바로가기
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <br>
+        <!-- Gallery
+            - Grid를 통해서 이미지들을 보여주는 공간입니다. 
+            - 현재 CSS가 인라인 형식으로 되어 있기 때문에 embeded 형태로 바꿀 예정입니다.
+        -->
+        <h3>세훈이의 사진첩</h3>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <div id="painting">
+                    <div id="top-row">
+                        <div id="big-box" class="red right"></div>
+                        <div id="divider-1" class="black right"></div>
+                        <div id="top-left-column" class="right">
+                            <div class="medium-box"></div>
+                            <div id="divider-2" class="black"></div>
+                            <div class="medium-box"></div>
+                        </div>
+                    </div>
+                    <div class="black right" id="divider-3"></div>
+                    <div id="bottom-row">
+                        <div id="bottom-right-column" class="right">
+                            <div class="small-box blue right"></div>
+                            <div id="divider-5" class="black right"></div>
+                            <div class="small-box yellow right"></div>
+                        </div>
+                        <div id="divider-6" class="right black"></div>
+                        <div id="bottom-middle-box" class="right"></div>
+                        <div id="divider-4" class="black right"></div>
+                        <div id="bottom-left-box" class="blue right"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="card" style="width: 25rem;">
+                    <img src="../static/image/윤아.jpeg" style="height:25rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">내 이름은 최윤아 </h5>
+                        <p class="card-text">비전공자분들 코딩이 어렵다면.. <br>저를 본받으시길...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 21rem;">
+                    <img src="../static/image/승아.jpeg" style="height:22rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">내 이름은 김승아 </h5>
+                        <p class="card-text">중앙대 멋쟁이 사자처럼 9기 대표선생님... <br>설명 필요없음...</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card" style="width: 21rem; ">
+                    <img src="../static/image/찬규.jpeg" style="height:25rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">내 이름은 이찬규 </h5>
+                        <p class="card-text">코딩을 너무 좋아하는 찬규! <br> 멋사 운영진의 귀여움을 담당하고 있는 찬규 사진! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem; ">
+                    <img src="../static/image/지영.jpeg" style="height:24rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">내 이름은 오지영 </h5>
+                        <p class="card-text">python 이 너무 좋아요 <br> python 모르면 저한테 다 물어보시죠! </p>
+                    </div>
+                </div>
+                <br>
+                <div class="card" style="width: 20rem; ">
+                    <img src="../static/image/프사.jpeg" style="height:17rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">내 이름은 인세훈 </h5>
+                        <p class="card-text">코딩 시러해요 <br> 코딩 잘 모르니 많이 물어보지 마세요! </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<html />

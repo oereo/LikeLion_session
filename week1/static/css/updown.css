@@ -1,0 +1,52 @@
+.temperature {
+    display: inline-block;
+    width: 90px;
+    height: 261px;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    padding: .8em 1em;
+    border: 5px solid #333;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+
+.wave {
+    opacity: .4;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    background: #0af;
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    margin-bottom: -301px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+
+    transition-duration: 0.75s;
+    transition-property: margin-bottom;
+    transition-timing-function: ease;
+}
+
+button:hover .wave {
+    margin-bottom: -100px;
+    animation: rotate 2000ms infinite linear;
+}
+
+button:hover .wave-bad {
+    margin-bottom: -270px;
+    animation: rotate 1800ms infinite linear;
+}
+
+button:hover .wave-coding {
+    margin-bottom: -150px;
+    animation: rotate 2000ms infinite linear;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+}
